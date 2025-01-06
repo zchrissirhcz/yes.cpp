@@ -12,7 +12,7 @@ public:
         stream << tag << " " << file << ":" << line << " ";
     }
     ~Logger() {
-        std::cout << stream.str() << std::endl;
+        std::cerr << stream.str() << '\n';
     }
     std::stringstream stream;
 };
